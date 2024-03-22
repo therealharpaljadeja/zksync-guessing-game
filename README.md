@@ -23,6 +23,7 @@ WALLET_PRIVATE_KEY=your_private_key_here...
 
 ## Requirements
 
+-   `yarn`
 -   Browser Injected Wallet (if you don't have a browser injected wallet, the frontend will suggest to install one)
 
 ## How to Use
