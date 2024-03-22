@@ -6,11 +6,11 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 error IncorrectDepositToPlay();
+error RewardingPlayerFailed();
 
 contract GuessingGame is Ownable, ReentrancyGuard {
     bytes32 public hashedSecretNumber;
     IERC20 public guessingToken;
-    uint256 public contractETHBalance;
 
     uint256 public constant FEE_TO_PLAY = 0.001 ether;
 
@@ -34,17 +34,19 @@ contract GuessingGame is Ownable, ReentrancyGuard {
         // Better to not accept any other values, to avoid complexity to maintain the true ETH balance of the contract.
         if (msg.value != FEE_TO_PLAY) revert IncorrectDepositToPlay();
 
-        // The payout includes current input msg.value
-        contractETHBalance += msg.value;
-
         bytes32 hashedInputNumber = keccak256(abi.encode(_num));
 
         if (hashedInputNumber == hashedSecretNumber) {
             guessingToken.transfer(msg.sender, 100 ether); // Transferring 100 GUESS tokens
-            uint256 valueToTransfer = (contractETHBalance * 80) / 100;
+            uint256 valueToTransfer = (address(this).balance * 80) / 100;
 
             // There is a re-entrancy guard just in case the msg.sender is a contract and tries to call the guess function again.
-            payable(msg.sender).call{value: valueToTransfer}("");
+            (bool success, ) = payable(msg.sender).call{value: valueToTransfer}(
+                ""
+            );
+
+            if (!success) revert RewardingPlayerFailed();
+
             emit UserWon(msg.sender);
             return;
         }

@@ -48,7 +48,7 @@ WALLET_PRIVATE_KEY=your_private_key_here...
 
 -   Mints 1M $GUESS to the deployer
 
-#### [GuessingGame.sol](https://sepolia.explorer.zksync.io/address/0xdaE31a4519Cb0418a91c34f379c3fdc2096f3E20#contract)
+#### [GuessingGame.sol](https://sepolia.explorer.zksync.io/address/0x854C7dDF36EBE3dbC4ad141B4A14ae00867A995d#contract)
 
 -   `constructor`
 
@@ -71,10 +71,9 @@ WALLET_PRIVATE_KEY=your_private_key_here...
 ### Transactions
 
 -   [Token Deployment](https://sepolia.explorer.zksync.io/tx/0xe68ff876a7a49f9996270a2a9df5f89525c0a4601a9a5bb15fa0097ce6aca7c9)
--   [Game Deployment](https://sepolia.explorer.zksync.io/tx/0xca16b513e132cd9be35fe9039289301d9ef5723d9ebdaf9377cac5b139a812ca)
--   [Game Win](https://sepolia.explorer.zksync.io/tx/0xe2cc1f3befaf0e4ace954b955ed59f97232bc213613cf143caf39d3347f38cfb)
--   [Incorrect Guess](https://sepolia.explorer.zksync.io/tx/0x33811c9fd138702a417a81469e2f9c795c8654aa1bb59349aa1ea825926caddb)
--   [Correct Guess](https://sepolia.explorer.zksync.io/tx/0x730103d621325ee4a4383a997bdc214eaf4f5cdb374abd07b93e1ea4c47fdeff)
+-   [Game Deployment](https://sepolia.explorer.zksync.io/tx/0x3d657bec0bd8a689d416169157437dae65c6df360783c8d597454dece614a182)
+-   [Game Win](https://sepolia.explorer.zksync.io/tx/0x4d12600bcb9f6c67fa27f72f8d7b318bb8a92cf82ede60719b9748546868cea3)
+-   [Game Loss](https://sepolia.explorer.zksync.io/tx/0xedbfff4fe32918e735b4955eb07a202bae0f5b2a38de502b3e795c8a806a3797)
 
 ## License
 
