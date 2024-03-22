@@ -70,7 +70,7 @@ WALLET_PRIVATE_KEY=your_private_key_here...
 
 ### Transactions
 
--   [Token Deployment](https://sepolia.explorer.zksync.io/tx/0xe68ff876a7a49f9996270a2a9df5f89525c0a4601a9a5bb15fa0097ce6aca7c9)
+-   [Token Deployment](https://sepolia.explorer.zksync.io/tx/0x15c3b3655c2400dcc893d8669b117a667f6efe9f6db4322216b25ea4f423ea59)
 -   [Game Deployment](https://sepolia.explorer.zksync.io/tx/0x3d657bec0bd8a689d416169157437dae65c6df360783c8d597454dece614a182)
 -   [Game Win](https://sepolia.explorer.zksync.io/tx/0x4d12600bcb9f6c67fa27f72f8d7b318bb8a92cf82ede60719b9748546868cea3)
 -   [Game Loss](https://sepolia.explorer.zksync.io/tx/0xedbfff4fe32918e735b4955eb07a202bae0f5b2a38de502b3e795c8a806a3797)
